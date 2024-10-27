@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Movie</title>
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
     <style>
       .header {
         display: flex;
@@ -33,6 +45,8 @@
       .menu {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
         color: white;
       }
 
@@ -40,6 +54,8 @@
         list-style: none;
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
         gap: 10px;
       }
 
@@ -85,137 +101,168 @@
     </style>
   </head>
   <body>
-    <div class="header">
-      <div class="logo">Logo</div>
-      <div class="menu">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Trending</li>
-          <li>News</li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Trending</a>
+            </li>
+          </ul>
+          <button class="btn btn-outline-success btn-light" type="submit">
+            Login
+          </button>
+        </div>
       </div>
-      <div class="login">
-        <button class="buttonLogin">Login</button>
-      </div>
-    </div>
+    </nav>
 
-    <div class="section1">
-      <div style="width: 50%">
-        <img
-          src="hero.jpg"
-          alt="heroLogo"
-          style="width: 300px; height: 200px; object-fit: contain"
-        />
-      </div>
-      <div>
-        <h1>A SILENT VOICE</h1>
-        <h3>
-          A deaf girl, Shoko, is bullied by the popular Shoya. As Shoya
-          continues to bully Shoko, the class turns its back on him. Shoko
-          transfers and Shoya grows up as an outcast. Alone and depressed, the
-          regretful Shoya finds Shoko to make amends.
-        </h3>
-      </div>
-    </div>
+    <main style="margin-top: 30px">
+      <section class="section1">
+        <div style="width: 50%">
+          <img
+            src="hero.jpg"
+            alt="heroLogo"
+            style="width: 300px; height: 200px; object-fit: contain"
+          />
+        </div>
+        <div>
+          <h1>A SILENT VOICE</h1>
+          <h3>
+            A deaf girl, Shoko, is bullied by the popular Shoya. As Shoya
+            continues to bully Shoko, the class turns its back on him. Shoko
+            transfers and Shoya grows up as an outcast. Alone and depressed, the
+            regretful Shoya finds Shoko to make amends.
+          </h3>
+        </div>
+      </section>
 
-    <h1 style="text-align: center">About</h1>
+      <h1 style="text-align: center; margin-top: 20px">About</h1>
 
-    <div class="sectionAbout">
-      <div style="width: 50%">
-        <img
-          src="about.webp"
-          alt="heroLogo"
-          style="width: 300px; height: 200px; object-fit: contain"
-        />
-      </div>
-      <div>
-        <h3>
-          Kim Ji-eun adalah seorang aktris dan model Korea Selatan yang bernaung
-          di bawah HB Entertainment. Debutnya dimulai dari film indie yang
-          berjudul Sketch Love pada tahun 2015. Kim Ji-eun telah menjadi model
-          dalam video musik Baek A-yeon So-so, 2PM Promise pada tahun 2016.
-        </h3>
-      </div>
-    </div>
+      <section class="sectionAbout">
+        <div style="width: 50%">
+          <img
+            src="about.webp"
+            alt="heroLogo"
+            style="width: 300px; height: 200px; object-fit: contain"
+          />
+        </div>
+        <div>
+          <h3>
+            Kim Ji-eun adalah seorang aktris dan model Korea Selatan yang
+            bernaung di bawah HB Entertainment. Debutnya dimulai dari film indie
+            yang berjudul Sketch Love pada tahun 2015. Kim Ji-eun telah menjadi
+            model dalam video musik Baek A-yeon So-so, 2PM Promise pada tahun
+            2016.
+          </h3>
+        </div>
+      </section>
 
-    <h1 style="text-align: center">Trending</h1>
+      <h1 style="text-align: center; margin-top: 20px">Trending</h1>
 
-    <div class="sectionTrending">
-      <div>
-        <img src="trending1.jpg" alt="" />
-        <h4>Movie 1</h4>
-      </div>
-      <div>
-        <img src="trending2.jpg" alt="" />
-        <h4>Movie 2</h4>
-      </div>
-      <div>
-        <img src="trending3.jpg" alt="" />
-        <h4>Movie 3</h4>
-      </div>
-      <div>
-        <img src="trending4.jpg" alt="" />
-        <h4>Movie 4</h4>
-      </div>
-    </div>
+      <section class="sectionTrending">
+        <div>
+          <img src="trending1.jpg" alt="" />
+          <h4>Movie 1</h4>
+        </div>
+        <div>
+          <img src="trending2.jpg" alt="" />
+          <h4>Movie 2</h4>
+        </div>
+        <div>
+          <img src="trending3.jpg" alt="" />
+          <h4>Movie 3</h4>
+        </div>
+        <div>
+          <img src="trending4.jpg" alt="" />
+          <h4>Movie 4</h4>
+        </div>
+      </section>
 
-    <h1 style="text-align: center; margin-top: 80px">News</h1>
+      <h1 style="text-align: center; margin-top: 80px">News</h1>
 
-    <div class="sectionAbout">
-      <div style="width: 50%">
-        <img
-          src="about.webp"
-          alt="heroLogo"
-          style="width: 300px; height: 200px; object-fit: contain"
-        />
-      </div>
-      <div>
-        <h3>
-          Kim Ji-eun adalah seorang aktris dan model Korea Selatan yang bernaung
-          di bawah HB Entertainment. Debutnya dimulai dari film indie yang
-          berjudul Sketch Love pada tahun 2015. Kim Ji-eun telah menjadi model
-          dalam video musik Baek A-yeon So-so, 2PM Promise pada tahun 2016.
-        </h3>
-      </div>
-    </div>
-    <div class="sectionAbout">
-      <div>
-        <h3>
-          Kim Ji-eun adalah seorang aktris dan model Korea Selatan yang bernaung
-          di bawah HB Entertainment. Debutnya dimulai dari film indie yang
-          berjudul Sketch Love pada tahun 2015. Kim Ji-eun telah menjadi model
-          dalam video musik Baek A-yeon So-so, 2PM Promise pada tahun 2016.
-        </h3>
-      </div>
-      <div style="width: 50%">
-        <img
-          src="about.webp"
-          alt="heroLogo"
-          style="width: 300px; height: 200px; object-fit: contain"
-        />
-      </div>
-    </div>
-    <div class="sectionAbout">
-      <div style="width: 50%">
-        <img
-          src="about.webp"
-          alt="heroLogo"
-          style="width: 300px; height: 200px; object-fit: contain"
-        />
-      </div>
-      <div>
-        <h3>
-          Kim Ji-eun adalah seorang aktris dan model Korea Selatan yang bernaung
-          di bawah HB Entertainment. Debutnya dimulai dari film indie yang
-          berjudul Sketch Love pada tahun 2015. Kim Ji-eun telah menjadi model
-          dalam video musik Baek A-yeon So-so, 2PM Promise pada tahun 2016.
-        </h3>
-      </div>
-    </div>
+      <section class="sectionAbout">
+        <div style="width: 50%">
+          <img
+            src="about.webp"
+            alt="heroLogo"
+            style="width: 300px; height: 200px; object-fit: contain"
+          />
+        </div>
+        <div>
+          <h3>
+            Kim Ji-eun adalah seorang aktris dan model Korea Selatan yang
+            bernaung di bawah HB Entertainment. Debutnya dimulai dari film indie
+            yang berjudul Sketch Love pada tahun 2015. Kim Ji-eun telah menjadi
+            model dalam video musik Baek A-yeon So-so, 2PM Promise pada tahun
+            2016.
+          </h3>
+        </div>
+      </section>
 
-    <div class="footer" style="margin-top: 20px">
-      <div class="logo">© 2024 Vidio, All Rights Reserved</div>
-    </div>
+      <section class="sectionAbout">
+        <div>
+          <h3>
+            Kim Ji-eun adalah seorang aktris dan model Korea Selatan yang
+            bernaung di bawah HB Entertainment. Debutnya dimulai dari film indie
+            yang berjudul Sketch Love pada tahun 2015. Kim Ji-eun telah menjadi
+            model dalam video musik Baek A-yeon So-so, 2PM Promise pada tahun
+            2016.
+          </h3>
+        </div>
+        <div style="width: 50%">
+          <img
+            src="about.webp"
+            alt="heroLogo"
+            style="width: 300px; height: 200px; object-fit: contain"
+          />
+        </div>
+      </section>
+
+      <section class="sectionAbout">
+        <div style="width: 50%">
+          <img
+            src="about.webp"
+            alt="heroLogo"
+            style="width: 300px; height: 200px; object-fit: contain"
+          />
+        </div>
+        <div>
+          <h3>
+            Kim Ji-eun adalah seorang aktris dan model Korea Selatan yang
+            bernaung di bawah HB Entertainment. Debutnya dimulai dari film indie
+            yang berjudul Sketch Love pada tahun 2015. Kim Ji-eun telah menjadi
+            model dalam video musik Baek A-yeon So-so, 2PM Promise pada tahun
+            2016.
+          </h3>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer" style="margin-top: 20px">
+        <div class="logo">© 2024 Vidio, All Rights Reserved</div>
+      </div>
+    </footer>
   </body>
 </html>
